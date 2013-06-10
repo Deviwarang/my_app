@@ -1,2 +1,92 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<!-- Intro Images -->
+
+<div id="intro-slider">
+
+ 	<div id="intro-cupcakes" class="grid_12 omega">
+		<div class="intro grid_9">
+			<h1 class="fittext">Opposites really do attract especially in our kitchen! we combine unexpected flavours that melt together to create ironically different deserts. </h1>
+			<p><a href="pricing.html" class="btn">Brouse our Cupcake</a></p>
+		</div>
+		<div class="intro-img grid_3 omega">
+			<object data="you-bake-blush.svg" type="imgage/svg+xml">
+				<a href="you-bake-me-blush.svg">
+					<!--[if lte IE 8]-->
+					<%= link_to image_tag("you-bake-me-blush.gif", alt: "you bake me blush") %>
+					<!--![endif]-->
+				</a>
+			</object>
+			
+		</div>
+	</div>
+
+<div id="intro-loactions" class="grid_12 omega">
+
+		<div class="intro grid_8">
+			<h1 class="fittext">we're kicking taste buds in to high gear from  the west to the east coast with our featured avacodo chocolate cupcake. </h1>
+			<p><a href="locations.html" class="btn">View our Locations</a></p>
+		</div>
+
+		<div class="intro-img grid_4 omega">
+			<object data="love-at-first-bite.svg" type="image/svg+xml">
+			<a href="Love-at-first-bite.svg">
+				<!--[if lte IE 8 ]-->
+				<%= link_to image_tag("love-at-first-bite.gif", alt: "Love at First Bite") %>
+					
+				<!--![endif]-->
+			</a>
+			</object>
+		</div>
+	</div>
+</div>
+
+<!-- End Intro Images-->
+		<div id="featured-cupcake" class="grid_7">
+			<h2>Cupcake of the week</h2>
+			<p>The weeks featured cupcate is the <a href="#">
+				Avocado chocolate cupcake</a> Its stange combo of flavours will kick your test buds into fiesta modie!</p>
+		<div id="featured-video">
+			<iframe src="http://player.vimeo.com/video/50610288?title=0&amp;byline=0&amp;portrait=0" width="400" height="275" frameborder="0"></iframe>
+		</div>
+		</div>
+
+<div id="new-cupcake" class="grid_5 omega">
+			<h2>Fresh out of the Oven</h2>
+			<p>Our newest cupcakes are<a href="#">Bacon me Creazy</a> and <a href="#">Jalapeno So Spicy</a>.</p>
+	<div data-picture data-alt="Bacon Me Crazy">
+			<div data-src="bacon-small.jpg"></div>
+			<div data-src="bacon-medium.jpg" data-media="(min-width:400px)"></div>
+			<div data-src="bacon-large.jpg" data-media="(min-width:800px)"></div>
+			<div data-src="bacon-extralarge.jpg" data-media="(min-width:1000px)"></div>
+<!-- Fallback content for non JS browers. Same imp src as the initial, unqualified source element. -->
+		<noscript>
+			<%= link_to image_tag("bacon-small.jpg", alt: "Bacon Me Crazy") %>
+			
+		</noscript>		
+			
+	</div>
+
+	<div data-picture data-alt="Spicy Lime">
+			<div data-src="lime-small.jpg">
+				<%= link_to image_tag("lime-small.jpg", alt: "Spicy Lime") %>
+			</div>
+			<div data-src="lime-medium.jpg" data-media="(min-width:400px)"></div>
+			<div data-src="lime-large.jpg" data-media="(min-width:800px)"></div>
+			<div data-src="lime-extralarge.jpg" data-media="min-width:1000px)"></div>
+
+<!-- Fallback content for non JS browsers. Same img src as the initial, unqualified source element.-->
+
+	<noscript>
+		<%= link_to image_tag("lime-small.jpg", alt: "Spicy Lime") %>
+		
+	</noscript>
+	</div>
+
+</div>
+
+
+
+
+
+
+
