@@ -8,6 +8,25 @@
 </head>
 <body>
 
+<div class="container clearfix">
+		<div id= "logo" class="grid_4"
+			<object data="img/log.svg" type="image/svg+xml" class="logo">
+				<!--[if lte IE 8] -->
+		<%= image_tag("logo.gif", alt: "Smells like Bakin") %> 
+		    
+			    <!--![endif-->
+			</object>
+		</div>
+		<div id="nav" class="grid_8 omega">
+			<ul>
+				<li class="about"><a href="#">About</a></li>
+				<li class="pricing"><a href="pricing.html">Cupcake &amp; Prices</a></li>
+				<li class="locations"><a href="#">Locations</a></li>
+				<li class="contact"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	
+
 <%= yield %>
 
 </body>
