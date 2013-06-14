@@ -111,8 +111,11 @@ hr {
 	float: left;
 	
 	}
-	#nav ul li.about {
+	#nav ul li.home {
 		width: 15%;
+	}
+	#nav ul li.about {
+		width: 10%;
 	}
 	#nav ul li.pricing {
 		width: 35%;
